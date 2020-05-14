@@ -20,7 +20,7 @@
             </div>
             <router-view></router-view>
             <hr />
-            <div class="card" :hide="hide">
+            <div class="card">
                 <div class="card-header">
                     <h3 class="card-title">Income Category</h3>
                     <div class="card-tools">
@@ -83,7 +83,7 @@ export default {
     data() {
         return {
             editMode: false,
-            hide: false
+            ishide: false
         };
     },
     methods: {
@@ -99,17 +99,14 @@ export default {
             this.form.reset();
             $("#createSectionModal").modal("show");
             this.form.fill(value);
-        },
-        hideCategory() {
-            if (this.$route.path == "/add-income") {
-                console.log(this.$route);
-            }
         }
     },
-    created() {
-        this.hideCategory();
-    }
+    computed: {}
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.hide-route {
+    display: none;
+}
+</style>
