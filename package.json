@@ -28,7 +28,7 @@
         "@ckeditor/ckeditor5-vue": "^1.0.1",
         "@fortawesome/fontawesome-free": "^5.13.0",
         "admin-lte": "^3.0.0-alpha.2",
-        "ckeditor4": "^4.14.0",
+        "ckeditor4": "^4.18.0",
         "dayjs": "^1.8.24",
         "sweetalert2": "^9.10.12",
         "vform": "^1.0.1",
